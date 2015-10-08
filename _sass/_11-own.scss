@@ -1,0 +1,225 @@
+/* ----------------------------- */
+/* ==own stylings                */
+/*		by						 */ 
+/* Jonathan Pansiot              */
+/* ----------------------------- */
+/* ----------------------------- */
+/* Sass Variables                */
+/* ----------------------------- */
+/* ----------------------------- */
+/* General                       */
+/* ----------------------------- */
+@font-face {font-family:"PORT118";src:url("font/PORT118.eot?") format("eot"),url("font/PORT118.woff") format("woff"),url("font/PORT118.ttf") format("truetype"),url("font/PORT118.svg#PORT118") format("svg");font-weight:normal;font-style:normal;}
+body {background-color:rgb(191,220,228);color:#3e4649;font-family:'Russo One',sans-serif;}
+.overlay {background-color:rgba(191,220,228,0.7);}
+ul[class*=-list] {margin:0;padding:0;}
+ul[class*=-list] li {list-style:none;}
+/* ----------------------------- */
+/* Navigation                    */
+/* ----------------------------- */
+nav {position:fixed;top:0;left:0;right:0;padding:20px 0;text-transform:uppercase;transition:all .5s ease;
+    .container {}
+    .navbar-header,
+    .navbar-right {display:inline-block;}
+    li {display:inline-block;list-style:none;}
+    a {display:block;padding:15px;background:rgba(62, 70, 73, 0.8);color:#efefef;text-decoration:none;}
+    a:hover {background:rgba(62, 70, 73, 0.2);color:#fff;transition:background .5s ease;}
+    a:active,
+    a:focus  {color:#fff;}
+    
+}
+.scrolling-nav {padding:0;top:0;background:#3e4649;border-bottom:1px solid #fff;transition:all .5s ease;}
+
+nav button {display:none;}
+/* ----------------------------- */
+/* Header                        */
+/* ----------------------------- */
+.intro {height:100vh;background:url(img/bg.svg) 0 0;background-size:cover;background-attachment:fixed;box-shadow:inset 0px -100px 120px 0px rgba(62, 70, 73, 0.8);font-size:2em;animation: imageAnimation 4s linear;
+    .content-int {height:100vh;}
+    .header-group {padding-top:10vh;font-family:'PORT118' ,sans-serif;text-align:center;text-transform:none;margin-bottom:.2em;animation: titleAnimation 4.5s linear;}
+    .header-group h1 {margin-bottom:15px;font-family:'PORT118' ,sans-serif;font-size:3em;line-height:1.1;text-shadow:3px -3px 0px #fbfcfc;text-transform:uppercase;}
+    .header-group h1 span {display:block;font-size:0.91em;text-transform:capitalize;}
+    .header-group .logo {padding:0;width:300px;height:300px;margin:0 auto; 
+    background:url(img/logo.svg), rgba(244,224,153,1);
+    background:url(img/logo.svg), -moz-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
+    background:url(img/logo.svg), -webkit-gradient(left top, right top, color-stop(0%, rgba(244,224,153,1)), color-stop(50%, rgba(244,224,153,.8)), color-stop(100%, rgba(244,224,153,1)));
+    background:url(img/logo.svg), -webkit-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
+    background:url(img/logo.svg), -o-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
+    background:url(img/logo.svg), -ms-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
+    background:url(img/logo.svg), linear-gradient(to right, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
+    background-position:50% 50%;background-repeat:no-repeat;background-size:500px;border-radius:50%;border:15px solid #fff;} 
+    .header-group h2 {margin:0;font-family:'Satisfy',sans-serif;font-size:2em;}
+    .header-group span {margin:0 7px;}
+    .header-group svg {fill:#3e4649;width:35px;height:20px;}
+    .btn-circle {display:inline-block;width:70px;height:70px;margin-top:50px;padding:4px 10px;background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border:2px solid #3e4649;border-radius:50%;color:#3e4649;font-size:40px;transition: background 0.3s ease-in-out 0s;}
+    .btn-circle:hover,
+    .btn-circle:focus {outline: 0; color: #fff; background: rgba(255,255,255,.1); }
+    .btn-circle img {transition-duration: 1.2s; } 
+    .btn-circle:hover img {animation: pulse 1.5s infinite linear;}
+}
+/* ----------------------------- */
+/* MAIN                          */
+/* ----------------------------- */
+.like-title {margin-left:185px;margin-bottom:0;color:#283e5b;font-family:'Russo One';font-size:5em;font-weight:700;text-shadow:3px -3px 0px #fff;text-transform:uppercase;}
+#works .like-title {color:#71aeda;}
+#contact .like-title {color:rgba(244,224,153,0.9);}
+@media screen and (max-width:92.125em) {
+  .like-title {margin-left:0;text-align:center;line-height:1;}
+}
+#main,
+#works,
+#contact {margin-bottom:150px;border-bottom:3px solid #fff;
+    h1 {font-family:'Russo One';text-transform:uppercase;}
+    .main-int,
+    .works-int,
+    .contact-int {background:#283e5b;color:#fff;margin-top:-39px;padding-top:90px;padding-bottom:120px;}
+    .works-int {background:#71aeda;}
+    .contact-int {background:rgba(244,224,153,0.9);}
+}
+
+section#contact {
+    h2 {font-family:'Russo One';text-transform:uppercase;color:#3e4649;}
+    form {margin-bottom:5em;color:#3e4649;text-align:left;text-transform:uppercase;}
+    label,
+    input,
+    textarea {display:block;}
+    input,
+    textarea {width:98%;padding:2px;background:#fdfdfd;border:2px solid #3e4649;border-width:0 0 2px;color:#3e4649;line-height:1.5}
+    input[type="submit"] {margin:30px 2% 0 0;padding:0 1%;float:right;width:auto;cursor:pointer;text-transform:uppercase;}
+}
+footer {padding-top:10em;}
+/* ----------------------------- */
+/* Animation                     */
+/* ----------------------------- */
+@keyframes titleAnimation { 
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes imageAnimation { 
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.005);
+        animation-timing-function: ease-in-out;
+    }
+    13% {
+        opacity: 1;
+        transform: scale(1.01) rotate(1deg);
+    }
+    33% {
+        opacity: 1;
+        transform: scale(1.01) rotate(0deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.01) rotate(-1deg);
+    }
+    70% {
+        opacity: 0.9;
+        transform: scale(1.01) rotate(1deg);
+    }
+    100% { opacity:1;
+            transform: scale(1) rotate(0deg);
+          }
+}
+@-webkit-keyframes imageAnimation { 
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-in-out;
+    }
+    33% {
+        opacity: 1;
+        transform: scale(1.1) rotate(1deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1) rotate(2deg);
+    }
+    75% {
+        opacity: 0.9;
+        transform: scale(1.1) rotate(1deg);
+    }
+    100% { opacity:1;
+            transform: scale(1) rotate(0deg);
+          }
+}
+@-moz-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.02);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.02);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,10 @@
+# Site settings
+title: Webforsailors
+email: www.jonathanpansiot.@gmail.com
+description: "Webdesign, hébergement et conception web dans la région de Saint Malo."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://webforsailors.fr" # the base hostname & protocol for your site
+github_username:  jonathanulco
+
+# Build settings
+markdown: kramdown
