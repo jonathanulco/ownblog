@@ -1812,14 +1812,7 @@ nav button {
   box-shadow: inset 0px -100px 120px 0px rgba(62, 70, 73, 0.8);
   font-size: 2em;
   -webkit-animation: imageAnimation 4s linear;
-          animation: imageAnimation 4s linear
-  /*background:url(img/logo.svg), -moz-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-  background:url(img/logo.svg), -webkit-gradient(left top, right top, color-stop(0%, rgba(244,224,153,1)), color-stop(50%, rgba(244,224,153,.8)), color-stop(100%, rgba(244,224,153,1)));
-  background:url(img/logo.svg), -webkit-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-  background:url(img/logo.svg), -o-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-  background:url(img/logo.svg), -ms-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-  background:url(img/logo.svg), linear-gradient(to right, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-  background-position:50% 50%;background-repeat:no-repeat;background-size:500px;border-radius:50%;border:15px solid #fff;} */ }
+          animation: imageAnimation 4s linear; }
   .intro .content-int {
     height: 100vh; }
   .intro .header-group {
@@ -1847,9 +1840,8 @@ nav button {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    background: #71aeda url(img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: 500px;
+    background: #71aeda url(img/logo.svg) 50% 50% no-repeat;
+    background-size: 157px;
     border-radius: 50%;
     border: 15px solid #fff; }
   .intro .header-group h2 {
@@ -1858,7 +1850,7 @@ nav button {
     font-size: 2em; }
   .intro .header-group span {
     margin: 0 7px; }
-  .intro .header-group svg {
+  .intro .header-group h2 svg {
     fill: #fff;
     width: 35px;
     height: 20px; }
@@ -1869,7 +1861,7 @@ nav button {
     margin-top: 50px;
     padding: 4px 10px;
     background: transparent none repeat scroll 0 0;
-    border: 2px solid #3e4649;
+    border: 2px solid #fff;
     border-radius: 50%;
     color: #3e4649;
     font-size: 40px;
@@ -1943,6 +1935,33 @@ nav button {
   #works .contact-int,
   #contact .contact-int {
     background: rgba(244, 224, 153, 0.9); }
+
+section#works .item-works {
+  position: relative; }
+section#works .item-works figcaption {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  top: 0;
+  width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(40, 62, 91, 0.9);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase; }
+section#works .item-works a:hover figcaption {
+  -webkit-animation: matrix 1.5s linear;
+          animation: matrix 1.5s linear; }
 
 section#contact h2 {
   font-family: 'Russo One';

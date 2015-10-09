@@ -39,19 +39,12 @@ nav button {display:none;}
     .header-group {padding-top:10vh;font-family:'PORT118' ,sans-serif;text-align:center;text-transform:none;margin-bottom:.2em;color:#fbfcfc;animation: titleAnimation 4.5s linear;}
     .header-group h1 {margin-bottom:15px;font-family:'PORT118' ,sans-serif;font-size:3em;line-height:1.1;text-shadow:3px -3px 0px #3e4649;text-transform:uppercase;}
     .header-group h1 span {display:block;font-size:0.91em;text-transform:capitalize;}
-    .header-group .logo {padding:0;width:300px;height:300px;margin:0 auto; 
-    background:#71aeda url(img/logo.svg);background-repeat:no-repeat;background-size:500px;border-radius:50%;border:15px solid #fff;}
-    /*background:url(img/logo.svg), -moz-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-    background:url(img/logo.svg), -webkit-gradient(left top, right top, color-stop(0%, rgba(244,224,153,1)), color-stop(50%, rgba(244,224,153,.8)), color-stop(100%, rgba(244,224,153,1)));
-    background:url(img/logo.svg), -webkit-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-    background:url(img/logo.svg), -o-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-    background:url(img/logo.svg), -ms-linear-gradient(left, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-    background:url(img/logo.svg), linear-gradient(to right, rgba(244,224,153,1) 0%, rgba(244,224,153,.8) 50%, rgba(244,224,153,1) 100%);
-    background-position:50% 50%;background-repeat:no-repeat;background-size:500px;border-radius:50%;border:15px solid #fff;} */
+    .header-group .logo {padding:0;width:300px;height:300px;margin:0 auto;background:#71aeda url(img/logo.svg) 50% 50% no-repeat;background-size:157px;border-radius:50%;border:15px solid #fff;}
+    
     .header-group h2 {margin:0;font-family:'Satisfy',sans-serif;font-size:2em;}
     .header-group span {margin:0 7px;}
-    .header-group svg {fill:#fff;width:35px;height:20px;}
-    .btn-circle {display:inline-block;width:70px;height:70px;margin-top:50px;padding:4px 10px;background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border:2px solid #3e4649;border-radius:50%;color:#3e4649;font-size:40px;transition: background 0.3s ease-in-out 0s;}
+    .header-group h2 svg {fill:#fff;width:35px;height:20px;}
+    .btn-circle {display:inline-block;width:70px;height:70px;margin-top:50px;padding:4px 10px;background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border:2px solid #fff;border-radius:50%;color:#3e4649;font-size:40px;transition: background 0.3s ease-in-out 0s;}
     .btn-circle:hover,
     .btn-circle:focus {outline: 0; color: #fff; background: rgba(255,255,255,.1); }
     .btn-circle img {transition-duration: 1.2s; } 
@@ -75,6 +68,11 @@ nav button {display:none;}
     .contact-int {background:#283e5b;color:#fff;margin-top:-39px;padding-top:90px;padding-bottom:120px;}
     .works-int {background:#71aeda;}
     .contact-int {background:rgba(244,224,153,0.9);}
+}
+section#works {
+    .item-works {position:relative;}
+    .item-works figcaption {position:absolute;height:0;overflow:hidden;top:0;width:0;display:flex;justify-content:space-around;align-items:center;background:rgba(40, 62, 91, 0.9);color:#fff;text-align:center;text-transform:uppercase;} 
+    .item-works a:hover figcaption {animation: matrix 1.5s linear;}
 }
 
 section#contact {
