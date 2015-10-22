@@ -1747,10 +1747,6 @@ body {
   color: #3e4649;
   font-family: 'Russo One',sans-serif; }
 
-.overlay {
-  -webkit-animation: overlayOpacity 4s linear;
-          animation: overlayOpacity 4s linear; }
-
 ul[class*=-list] {
   margin: 0;
   padding: 0; }
@@ -1769,7 +1765,8 @@ nav {
   padding: 20px 0;
   text-transform: uppercase;
   -webkit-transition: all .5s ease;
-          transition: all .5s ease; }
+          transition: all .5s ease;
+  z-index: 2; }
   nav .navbar-header,
   nav .navbar-right {
     display: inline-block; }
@@ -1801,18 +1798,27 @@ nav {
 nav button {
   display: none; }
 
+@media screen and (max-width: 650px) {
+  nav a {
+    padding: 10px; }
+
+  .navbar-brand {
+    display: none; }
+
+  .pll {
+    padding: 0; } }
 /* ----------------------------- */
 /* Header                        */
 /* ----------------------------- */
 .intro {
   height: 100vh;
+  margin-bottom: 150px;
   background: url(img/bg.svg) 0 0;
   background-size: cover;
   background-attachment: fixed;
+  border-bottom: 3px solid #fff;
   box-shadow: inset 0px -100px 120px 0px rgba(62, 70, 73, 0.8);
-  font-size: 2em;
-  -webkit-animation: imageAnimation 4s linear;
-          animation: imageAnimation 4s linear; }
+  font-size: 2em; }
   .intro .content-int {
     height: 100vh; }
   .intro .header-group {
@@ -1821,9 +1827,7 @@ nav button {
     text-align: center;
     text-transform: none;
     margin-bottom: .2em;
-    color: #fbfcfc;
-    -webkit-animation: titleAnimation 4.5s linear;
-            animation: titleAnimation 4.5s linear; }
+    color: #fbfcfc; }
   .intro .header-group h1 {
     margin-bottom: 15px;
     font-family: 'PORT118' ,sans-serif;
@@ -1879,6 +1883,39 @@ nav button {
     -webkit-animation: pulse 1.5s infinite linear;
             animation: pulse 1.5s infinite linear; }
 
+/*// responsive animation  */
+@media screen and (min-width: 1024px) {
+  .overlay {
+    -webkit-animation: overlayOpacity 4s linear;
+            animation: overlayOpacity 4s linear; }
+
+  .intro {
+    -webkit-animation: imageAnimation 4s linear;
+            animation: imageAnimation 4s linear; }
+    .intro .header-group {
+      -webkit-animation: titleAnimation 4.5s linear;
+              animation: titleAnimation 4.5s linear; } }
+@media screen and (max-width: 1280px) {
+  .intro .header-group .logo {
+    background-size: 90px;
+    width: 200px;
+    height: 200px; } }
+@media screen and (max-width: 800px) {
+  .intro .header-group {
+    padding-top: 200px;
+    font-size: .9em; } }
+@media screen and (max-width: 768px) {
+  .intro .header-group {
+    padding-top: 200px;
+    font-size: .8em; } }
+@media screen and (max-width: 767px) {
+  .intro {
+    height: 250vh; }
+    .intro .header-group {
+      padding-top: 150px; } }
+@media screen and (max-width: 650px) {
+  .intro .header-group {
+    font-size: .6em; } }
 /* ----------------------------- */
 /* MAIN                          */
 /* ----------------------------- */
@@ -1903,6 +1940,9 @@ nav button {
     margin-left: 0;
     text-align: center;
     line-height: 1; } }
+@media screen and (max-width: 590px) {
+  .like-title {
+    font-size: 3em; } }
 #main,
 #works,
 #contact {
@@ -1913,18 +1953,12 @@ nav button {
   #contact h1 {
     font-family: 'Russo One';
     text-transform: uppercase; }
-  #main .main-int,
-  #main .works-int,
-  #main .contact-int,
-  #works .main-int,
-  #works .works-int,
-  #works .contact-int,
-  #contact .main-int,
-  #contact .works-int,
-  #contact .contact-int {
+  #main .content-int,
+  #works .content-int,
+  #contact .content-int {
     background: #283e5b;
     color: #fff;
-    margin-top: -39px;
+    margin-top: -32px;
     padding-top: 90px;
     padding-bottom: 120px; }
   #main .works-int,
@@ -1936,8 +1970,19 @@ nav button {
   #contact .contact-int {
     background: rgba(244, 224, 153, 0.9); }
 
+@media screen and (max-width: 1280px) {
+  #main .content-int,
+  #works .content-int,
+  #contact .content-int {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: -13px; } }
 section#works .item-works {
   position: relative; }
+section#works .grid-3 .item-works {
+  margin-bottom: 10px; }
+section#works .grid-3 .item-works figure {
+  margin: 0; }
 section#works .item-works figcaption {
   position: absolute;
   height: 0;
@@ -1993,6 +2038,9 @@ section#contact input[type="submit"] {
   cursor: pointer;
   text-transform: uppercase; }
 
+@media screen and (max-width: 767px) {
+  .w50 {
+    width: 100%; } }
 footer {
   padding-top: 10em; }
 
