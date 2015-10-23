@@ -1754,6 +1754,38 @@ ul[class*=-list] {
 ul[class*=-list] li {
   list-style: none; }
 
+.btn-circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-top: 50px;
+  padding: 4px 10px;
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #3e4649;
+  font-size: 40px;
+  -webkit-transition: background 0.3s ease-in-out 0s;
+          transition: background 0.3s ease-in-out 0s; }
+
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1); }
+
+.btn-circle img {
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s; }
+
+.btn-circle:hover img {
+  -webkit-animation: pulse 1.5s infinite linear;
+          animation: pulse 1.5s infinite linear; }
+
+.rss-subscribe {
+  margin: 40px 0;
+  text-align: right; }
+
 /* ----------------------------- */
 /* Navigation                    */
 /* ----------------------------- */
@@ -1858,30 +1890,6 @@ nav button {
     fill: #fff;
     width: 35px;
     height: 20px; }
-  .intro .btn-circle {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin-top: 50px;
-    padding: 4px 10px;
-    background: transparent none repeat scroll 0 0;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: #3e4649;
-    font-size: 40px;
-    -webkit-transition: background 0.3s ease-in-out 0s;
-            transition: background 0.3s ease-in-out 0s; }
-  .intro .btn-circle:hover,
-  .intro .btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1); }
-  .intro .btn-circle img {
-    -webkit-transition-duration: 1.2s;
-            transition-duration: 1.2s; }
-  .intro .btn-circle:hover img {
-    -webkit-animation: pulse 1.5s infinite linear;
-            animation: pulse 1.5s infinite linear; }
 
 /*// responsive animation  */
 @media screen and (min-width: 1024px) {
@@ -1923,7 +1931,7 @@ nav button {
   margin-left: 185px;
   margin-bottom: 0;
   color: #283e5b;
-  font-family: 'Russo One';
+  font-family: 'Russo One',sans-serif;
   font-size: 5em;
   font-weight: 700;
   text-shadow: 3px -3px 0px #fff;
@@ -2043,6 +2051,44 @@ section#contact input[type="submit"] {
     width: 100%; } }
 footer {
   padding-top: 10em; }
+
+/* ----------------------------- */
+/* Blog                          */
+/* ----------------------------- */
+.blog {
+  background: #3e4649; }
+  .blog h1 {
+    font-family: 'Russo One',sans-serif; }
+  .blog nav a {
+    color: #3e4649; }
+  .blog .scrolling-nav a {
+    color: #fff; }
+  .blog .header-post {
+    padding-top: 100px; }
+  .blog .btn-circle {
+    margin-bottom: 50px; }
+  .blog .blog-container {
+    background: #fff; }
+  .blog #main {
+    border: none;
+    padding-bottom: 150px; }
+  .blog .tag-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-transform: capitalize; }
+  .blog .post {
+    padding-bottom: 150px; }
+  .blog .post-list {
+    margin-bottom: 2em; }
+  .blog .post-list li {
+    overflow: hidden;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #3e4649;
+    margin-bottom: 7px; }
+  .blog .post-list li a {
+    text-decoration: none; }
+  .blog footer {
+    color: #fff; }
 
 /* ----------------------------- */
 /* Animation                     */

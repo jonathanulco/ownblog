@@ -1,0 +1,10 @@
+<header class="header-post" role="banner">
+    <div class="center txtcenter mw1140p">
+        {% if page.date %}
+            <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+        {% endif %}
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description" class="subtitle">{{ page.description }}</p>
+    	<a role="button" href="#main" class="btn-circle" data-scroll ><img src="/img/btn-circle-navy.svg" alt="liens"></a>
+    </div>
+</header>

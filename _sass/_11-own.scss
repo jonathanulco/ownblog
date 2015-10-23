@@ -13,6 +13,12 @@
 body {background-color:rgb(191,220,228);color:#3e4649;font-family:'Russo One',sans-serif;}
 ul[class*=-list] {margin:0;padding:0;}
 ul[class*=-list] li {list-style:none;}
+.btn-circle {display:inline-block;width:70px;height:70px;margin-top:50px;padding:4px 10px;background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border:2px solid #fff;border-radius:50%;color:#3e4649;font-size:40px;transition: background 0.3s ease-in-out 0s;}
+.btn-circle:hover,
+.btn-circle:focus {outline: 0; color: #fff; background: rgba(255,255,255,.1); }
+.btn-circle img {transition-duration: 1.2s; } 
+.btn-circle:hover img {animation: pulse 1.5s infinite linear;}
+.rss-subscribe {margin:40px 0;text-align:right;}    
 /* ----------------------------- */
 /* Navigation                    */
 /* ----------------------------- */
@@ -47,11 +53,6 @@ nav button {display:none;}
     .header-group h2 {margin:0;font-family:'Satisfy',sans-serif;font-size:2em;}
     .header-group span {margin:0 7px;}
     .header-group h2 svg {fill:#fff;width:35px;height:20px;}
-    .btn-circle {display:inline-block;width:70px;height:70px;margin-top:50px;padding:4px 10px;background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border:2px solid #fff;border-radius:50%;color:#3e4649;font-size:40px;transition: background 0.3s ease-in-out 0s;}
-    .btn-circle:hover,
-    .btn-circle:focus {outline: 0; color: #fff; background: rgba(255,255,255,.1); }
-    .btn-circle img {transition-duration: 1.2s; } 
-    .btn-circle:hover img {animation: pulse 1.5s infinite linear;}
 }
 /*// responsive animation  */
 @media screen and (min-width:1024px) {
@@ -80,7 +81,7 @@ nav button {display:none;}
 /* ----------------------------- */
 /* MAIN                          */
 /* ----------------------------- */
-.like-title {margin-left:185px;margin-bottom:0;color:#283e5b;font-family:'Russo One';font-size:5em;font-weight:700;text-shadow:3px -3px 0px #fff;text-transform:uppercase;}
+.like-title {margin-left:185px;margin-bottom:0;color:#283e5b;font-family:'Russo One',sans-serif;font-size:5em;font-weight:700;text-shadow:3px -3px 0px #fff;text-transform:uppercase;}
 #works .like-title {color:#71aeda;}
 #contact .like-title {color:rgba(244,224,153,0.9);}
 @media screen and (max-width:92.125em) {
@@ -126,6 +127,25 @@ section#contact {
     .w50 {width:100%;}
 }
 footer {padding-top:10em;}
+/* ----------------------------- */
+/* Blog                          */
+/* ----------------------------- */
+.blog {background:#3e4649;
+    h1 {font-family:'Russo One',sans-serif;}
+    nav a {color:#3e4649;}
+    .scrolling-nav a {color:#fff;}
+    .header-post {padding-top:100px;}
+    .btn-circle {margin-bottom:50px;}
+    .blog-container {background:#fff;}
+    #main {border:none;padding-bottom:150px;}
+    .tag-title {font-size:1.5em;margin-bottom:1em;text-transform:capitalize;}
+    .post {padding-bottom:150px;}
+    .post-list {margin-bottom:2em;}
+    .post-list li {overflow:hidden;padding-bottom:7px;border-bottom:1px solid #3e4649;margin-bottom:7px;}
+    .post-list li a {text-decoration:none;}
+    footer {color:#fff;}
+}
+
 /* ----------------------------- */
 /* Animation                     */
 /* ----------------------------- */
