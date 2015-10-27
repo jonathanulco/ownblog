@@ -33,7 +33,7 @@ nav {position:fixed;top:0;left:0;right:0;padding:20px 0;text-transform:uppercase
     a:focus  {color:#fff;}
     
 }
-.scrolling-nav {padding:0;top:0;background:#3e4649;border-bottom:1px solid #fff;transition:all .5s ease;}
+.scrolling-nav {padding:0;top:0;background:rgb(62, 70, 73);border-bottom:1px solid #fff;transition:all .5s ease;}
 nav button {display:none;}
 
 @media screen and (max-width:650px) {
@@ -92,9 +92,10 @@ nav button {display:none;}
 }
 #main,
 #works,
-#contact {margin-bottom:150px;border-bottom:3px solid #fff;
+#contact {padding-top:50px;margin-bottom:150px;border-bottom:3px solid #fff;
     h1 {font-family:'Russo One';text-transform:uppercase;}
     .content-int {background:#283e5b;color:#fff;margin-top:-32px;padding-top:90px;padding-bottom:120px;}
+    .content-int p {font-size:1.143em;}
     .works-int {background:#71aeda;}
     .contact-int {background:rgba(244,224,153,0.9);}
 }
@@ -115,6 +116,7 @@ section#works {
 
 section#contact {
     h2 {font-family:'Russo One';text-transform:uppercase;color:#3e4649;}
+    h2+p {margin-bottom:1.5em;color:#3e4649;}
     form {margin-bottom:5em;color:#3e4649;text-align:left;text-transform:uppercase;}
     label,
     input,

@@ -1954,6 +1954,7 @@ nav button {
 #main,
 #works,
 #contact {
+  padding-top: 50px;
   margin-bottom: 150px;
   border-bottom: 3px solid #fff; }
   #main h1,
@@ -1969,6 +1970,10 @@ nav button {
     margin-top: -32px;
     padding-top: 90px;
     padding-bottom: 120px; }
+  #main .content-int p,
+  #works .content-int p,
+  #contact .content-int p {
+    font-size: 1.143em; }
   #main .works-int,
   #works .works-int,
   #contact .works-int {
@@ -2019,6 +2024,9 @@ section#works .item-works a:hover figcaption {
 section#contact h2 {
   font-family: 'Russo One';
   text-transform: uppercase;
+  color: #3e4649; }
+section#contact h2 + p {
+  margin-bottom: 1.5em;
   color: #3e4649; }
 section#contact form {
   margin-bottom: 5em;
